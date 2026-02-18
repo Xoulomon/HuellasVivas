@@ -1,10 +1,10 @@
 # 🐾 Huellas Vivas
 
-Huellas Vivas is a donation platform created to help pets and animals receive the medical care they need.  
+Huellas Vivas is a donation platform created to help pets and animals receive the medical care they need.
 
 When a dog needs surgery, a cat requires treatment, or any animal faces high medical expenses, this platform allows people to create fundraising campaigns and receive support from others who care.
 
-Because every paw leaves a mark. 🐶🐱
+**Because every paw leaves a mark.** 🐶🐱
 
 ---
 
@@ -12,7 +12,8 @@ Because every paw leaves a mark. 🐶🐱
 
 Huellas Vivas connects people who need help covering veterinary expenses with people who want to help.
 
-Users can:
+**Users can:**
+
 - Create donation campaigns
 - Contribute to existing campaigns
 - Share cases with others
@@ -26,7 +27,9 @@ The goal is simple: make animal care more accessible through community support.
 ## 💡 How It Works
 
 ### 📝 Create a Post
+
 A post includes:
+
 - Title
 - Detailed description of the case
 - Supporting evidence (photos, videos, medical documents)
@@ -38,7 +41,9 @@ Once the goal is reached, the campaign is automatically marked as completed — 
 ---
 
 ### 💬 Community Interaction
+
 Each post includes:
+
 - A comment section
 - The ability to reply to other users
 - A visual category indicator (Dog, Cat, Rabbit, Others)
@@ -48,6 +53,7 @@ Posts are displayed in a vertical infinite scroll feed, similar to social media 
 ---
 
 ### 🔐 Secure Donations
+
 - Passwords and sensitive data are securely encrypted.
 - Donations are protected using blockchain-based escrow logic.
 - Donors may request additional proof before releasing funds.
@@ -59,7 +65,8 @@ Posts are displayed in a vertical infinite scroll feed, similar to social media 
 
 To donate or create a campaign, users must register.
 
-### Registration includes:
+**Registration includes:**
+
 - Username
 - First name
 - Last name
@@ -67,7 +74,8 @@ To donate or create a campaign, users must register.
 - Secure password
 - Optional profile picture
 
-After registering, users can:
+**After registering, users can:**
+
 - Donate
 - Raise funds
 - Receive notifications
@@ -78,6 +86,7 @@ After registering, users can:
 ## 🔔 Notifications
 
 Users receive notifications when:
+
 - A donor requests additional proof
 - A fundraiser submits requested proof
 - A donation is successfully completed
@@ -86,25 +95,39 @@ Users receive notifications when:
 
 ## 🧱 Tech Stack
 
-### Frontend
-- ⚡ Next.js
-- ⚛️ React
-- 🟦 TypeScript
-- Minimalist and accessible UI
-
-### Backend
-- 🚀 NestJS
-- RESTful API architecture
-- Scalable modular structure
+| Layer    | Technologies |
+| -------- | ------------ |
+| **Frontend** | Next.js, React, TypeScript — minimalist and accessible UI (Tailwind CSS, shadcn/ui) |
+| **Backend**  | NestJS — RESTful API, scalable modular structure |
 
 ---
 
-## 📂 Pages
+## 📂 Repository Structure
 
-- 🏠 Home (Infinite scroll feed)
-- 📝 Register
-- 🔐 Login
-- 👤 My Profile
+This is a **monorepo**: the frontend lives in the root and the API in a separate folder.
+
+```
+huellas-vivas/
+├── app/              # Next.js App Router (pages, layouts)
+├── components/       # Reusable UI (including shadcn/ui)
+├── hooks/            # React hooks
+├── lib/              # Utilities and shared logic
+├── public/           # Static assets
+├── backend/          # NestJS API
+│   ├── src/          # Application source
+│   └── test/         # Backend tests
+├── CONTRIBUTING.md   # Setup and contribution guide
+└── README.md
+```
+
+---
+
+## 📄 Pages
+
+- 🏠 **Home** — Infinite scroll feed
+- 📝 **Register**
+- 🔐 **Login**
+- 👤 **My Profile**
 
 Navigation is handled through a clean sidebar layout.
 
@@ -113,6 +136,7 @@ Navigation is handled through a clean sidebar layout.
 ## 🎯 Project Vision
 
 Huellas Vivas aims to:
+
 - Promote transparency in fundraising
 - Make donation campaigns accessible
 - Build a scalable open-source solution
@@ -122,9 +146,99 @@ Huellas Vivas aims to:
 
 ## 🚀 Getting Started
 
-### Frontend
+### Prerequisites
+
+- **Node.js** 18.18+ (20+ recommended)
+- **pnpm** (recommended via [Corepack](https://nodejs.org/api/corepack.html)):
+
+  ```bash
+  corepack enable
+  corepack prepare pnpm@latest --activate
+  ```
+
+- **Git**
+
+### 1. Clone the repository
 
 ```bash
-cd frontend
-npm install
-npm run dev
+git clone https://github.com/YOUR_ORG/huellas-vivas.git
+cd huellas-vivas
+```
+
+### 2. Install dependencies
+
+**Frontend** (from repo root):
+
+```bash
+pnpm install
+```
+
+**Backend**:
+
+```bash
+pnpm -C backend install
+```
+
+### 3. Run the application
+
+Use **two terminals**: one for the frontend, one for the backend.
+
+**Terminal 1 — Frontend:**
+
+```bash
+pnpm dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+**Terminal 2 — Backend:**
+
+The API runs on a different port so it doesn’t conflict with Next.js (default 3000).
+
+- **Windows (PowerShell):**
+  ```powershell
+  $env:PORT=4000
+  pnpm -C backend start:dev
+  ```
+- **Windows (CMD):**
+  ```bat
+  set PORT=4000&& pnpm -C backend start:dev
+  ```
+- **macOS / Linux:**
+  ```bash
+  PORT=4000 pnpm -C backend start:dev
+  ```
+
+The API will be available at `http://localhost:4000`.
+
+### 4. Optional: run checks
+
+- **Lint frontend:** `pnpm lint`
+- **Build frontend:** `pnpm build`
+- **Lint backend:** `pnpm -C backend lint`
+- **Test backend:** `pnpm -C backend test`
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions. Please read **[CONTRIBUTING.md](./CONTRIBUTING.md)** for:
+
+- Detailed setup and run instructions
+- Code style and project conventions
+- Pull request process and commit guidelines
+
+---
+
+## 📚 Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [NestJS Documentation](https://docs.nestjs.com)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [shadcn/ui](https://ui.shadcn.com)
+
+---
+
+## 📄 License
+
+This project is currently unlicensed. See repository settings or contact the maintainers for usage terms.
