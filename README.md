@@ -1,3 +1,21 @@
+<div align="center">
+<img width="1000" height="1024" alt="image" src="https://github.com/user-attachments/assets/8b2c359f-2b7f-40c4-ace3-3bb9130c8f8d" />
+
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Stellar](https://img.shields.io/badge/Stellar-7D00FF?style=for-the-badge&logo=Stellar&logoColor=white)
+
+[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-green?style=flat-square)](https://opensource.org/)
+
+
+**A donation platform that helps raise funds for pets and animals requiring medical treatment or special care.**
+
+[Conduct](./docs/CODE_OF_CONDUCT.md) • [Security](./docs/SECURITY.md) • [Contributing](./docs/CONTRIBUTING.md)
+</div>
+
+
 # 🐾 Huellas Vivas
 
 Huellas Vivas is a donation platform created to help pets and animals receive the medical care they need.
