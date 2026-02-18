@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐾 Huellas Vivas
 
-## Getting Started
+Huellas Vivas is a donation platform created to help pets and animals receive the medical care they need.  
 
-First, run the development server:
+When a dog needs surgery, a cat requires treatment, or any animal faces high medical expenses, this platform allows people to create fundraising campaigns and receive support from others who care.
+
+Because every paw leaves a mark. 🐶🐱
+
+---
+
+## 🌟 What is Huellas Vivas?
+
+Huellas Vivas connects people who need help covering veterinary expenses with people who want to help.
+
+Users can:
+- Create donation campaigns
+- Contribute to existing campaigns
+- Share cases with others
+- Comment and interact
+- Track fundraising progress in real time
+
+The goal is simple: make animal care more accessible through community support.
+
+---
+
+## 💡 How It Works
+
+### 📝 Create a Campaign
+A campaign includes:
+- Title
+- Detailed description of the case
+- Supporting evidence (photos, videos, medical documents)
+- Target fundraising amount
+- Real-time progress indicator
+
+Once the goal is reached, the campaign is automatically marked as completed — but it can still receive additional donations.
+
+---
+
+### 💬 Community Interaction
+Each post includes:
+- A comment section
+- The ability to reply to other users
+- A visual category indicator (Dog, Cat, Rabbit, Others)
+
+Posts are displayed in a vertical infinite scroll feed, similar to social media platforms.
+
+---
+
+### 🔐 Secure Donations
+- Passwords and sensitive data are securely encrypted.
+- Donations are protected using blockchain-based escrow logic.
+- Donors may request additional proof before releasing funds.
+- Transparency is a priority.
+
+---
+
+## 👤 User Features
+
+To donate or create a campaign, users must register.
+
+### Registration includes:
+- Username
+- First name
+- Last name
+- Email
+- Secure password
+- Optional profile picture
+
+After registering, users can:
+- Donate
+- Raise funds
+- Receive notifications
+- Manage their profile
+
+---
+
+## 🔔 Notifications
+
+Users receive notifications when:
+- A donor requests additional proof
+- A fundraiser submits requested proof
+- A donation is successfully completed
+
+---
+
+## 🧱 Tech Stack
+
+### Frontend
+- ⚡ Next.js
+- ⚛️ React
+- 🟦 TypeScript
+- Minimalist and accessible UI
+
+### Backend
+- 🚀 NestJS
+- RESTful API architecture
+- Scalable modular structure
+
+---
+
+## 📂 Pages
+
+- 🏠 Home (Infinite scroll feed)
+- 📝 Register
+- 🔐 Login
+- 👤 My Profile
+
+Navigation is handled through a clean sidebar layout.
+
+---
+
+## 🎯 Project Vision
+
+Huellas Vivas aims to:
+- Promote transparency in fundraising
+- Make donation campaigns accessible
+- Build a scalable open-source solution
+- Provide a clean and user-friendly experience
+
+---
+
+## 🚀 Getting Started
+
+### Frontend
 
 ```bash
+cd frontend
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
