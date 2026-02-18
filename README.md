@@ -25,8 +25,8 @@ The goal is simple: make animal care more accessible through community support.
 
 ## 💡 How It Works
 
-### 📝 Create a Campaign
-A campaign includes:
+### 📝 Create a Post
+A post includes:
 - Title
 - Detailed description of the case
 - Supporting evidence (photos, videos, medical documents)
